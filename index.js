@@ -1,5 +1,5 @@
-import mainVisitor from "./lib/index";
+import potatoSlice from "./lib/index";
 
 export {
-    mainVisitor as simplr,
+    potatoSlice,
 };
