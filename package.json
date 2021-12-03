@@ -1,0 +1,22 @@
+{
+  "name": "potato-slice",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/bundle.cjs.js",
+      "import": "./dist/bundle.es.js"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/types": "^7.16.0",
+    "rollup": "^2.60.2"
+  }
+}
