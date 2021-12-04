@@ -1,6 +1,8 @@
 const EXTERNAL = [
     "@babel/types",
     "@babel/template",
+    "@babel/traverse",
+    "@babel/parser",
 ];
 
 export default {
