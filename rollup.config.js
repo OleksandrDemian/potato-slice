@@ -2,6 +2,8 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 
 const EXTERNAL = [
+    "@babel/core",
+    // UNUSED
     "@babel/types",
     "@babel/template",
     "@babel/traverse",
