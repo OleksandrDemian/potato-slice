@@ -1,3 +1,6 @@
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+
 const EXTERNAL = [
     "@babel/types",
     "@babel/template",
@@ -17,5 +20,9 @@ export default {
             file: 'dist/bundle.es.js',
             format: 'es',
         },
-    ]
+    ],
+    plugins: [
+        nodeResolve(),
+        commonjs(),
+    ],
 };
