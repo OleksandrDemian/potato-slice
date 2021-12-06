@@ -1,10 +1,11 @@
 # 🥔 Potato slice
-Potato slice is a babel plugin to simplify React code by removing boilerplate statements.
+Potato slice is a babel plugin to simplify React code by removing boilerplate statements, like calling to hooks (will be done automatically) or declaring hook dependencies (will be injected automatically).
+The processing is at build time, so no performance impact on production code.
 
 ! IN THE CURRENT STATE THIS IS ONLY A PROOF-OF-CONCEPT AND SHOULD NOT BE USED.
 
 ## ⛓ How it works
-TODO
+This babel plugin will pre-process React code and replace the proposed syntax with standard React hooks.
 
 ### 🚀 useState
 The `useState` hook is used to create reactive value.
